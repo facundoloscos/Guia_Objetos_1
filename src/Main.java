@@ -66,6 +66,24 @@ public class Main {
                     //Inciso b:
                     System.out.println(item1.toString());
                     break;
+                case 4:
+                    //Inciso a:
+                    Cuenta cuentin = new Cuenta(1, "Pepe", 15000);
+
+                    //Inciso b:
+                    cuentin.credito(2500);
+
+                    //Inciso c:
+                    cuentin.debito(1500);
+
+                    //Inciso d:
+                    cuentin.debito(30000);
+
+                    //Inciso e:
+                    System.out.println(cuentin.toString());
+                    break;
+                case 5:
+
 
                 default:
                     System.out.println("Opcion Invalida!");
