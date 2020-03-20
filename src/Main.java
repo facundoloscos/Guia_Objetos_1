@@ -83,8 +83,30 @@ public class Main {
                     System.out.println(cuentin.toString());
                     break;
                 case 5:
+                    //Inciso 4: Instancio objeto
+                    int hora, minuto, segundo;
+                    Hora horin = new Hora();
+                    System.out.print("Ingrese Hora: ");
+                    hora = entry.nextInt();
+                    horin.setHora(hora);
+                    System.out.print("Ingrese Minuto: ");
+                    minuto = entry.nextInt();
+                    horin.setMinuto(minuto);
+                    System.out.print("Ingrese Segundo: ");
+                    segundo = entry.nextInt();
+                    horin.setSegundo(segundo);
 
+                    //Inciso 1: Lo muestro
+                    System.out.println(horin.mostrar());
 
+                    //Inciso 2: Le sumo un segundo
+                    horin.avanzaSegundo();
+                    System.out.println(horin.mostrar());
+
+                    //Inciso 3: Le resto un segundo
+                    horin.retrocedeSegundo();
+                    System.out.println(horin.mostrar());
+                    break;
                 default:
                     System.out.println("Opcion Invalida!");
             }
